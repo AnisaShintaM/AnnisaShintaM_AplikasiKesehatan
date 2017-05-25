@@ -35,6 +35,7 @@ public class Frame2 extends javax.swing.JFrame {
         Hasil1 = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
         Hasil3 = new javax.swing.JTextArea();
+        reset1 = new javax.swing.JButton();
         reset = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -101,6 +102,16 @@ public class Frame2 extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane4);
         jScrollPane4.setBounds(550, 330, 370, 120);
+
+        reset1.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 14)); // NOI18N
+        reset1.setText("BACK");
+        reset1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reset1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(reset1);
+        reset1.setBounds(840, 10, 90, 30);
 
         reset.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 14)); // NOI18N
         reset.setText("RESET");
@@ -239,7 +250,7 @@ public class Frame2 extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/77.-Asuransi-Kesehatan-Saja-atau-Dengan-Investasi.jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 0, 940, 480);
+        jLabel7.setBounds(0, -10, 940, 520);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -257,10 +268,8 @@ public class Frame2 extends javax.swing.JFrame {
            Hasil1.append("Penyakit demam dengue disebabkan oleh virus dengue \nyang ditularkan kepada manusia melalui perantara nyamuk \nAedes aegypti dan Aedes albopictus");
            Hasil2.append("-Mendadak demam tinggi, bisa mencapai 105 ° F \n-Sakit di belakang mata \n-Nyeri sendi, otot \n-Sakit kepala yang hebat Ruam di sebagian besar tubuh");
            Hasil3.append("-Makan makanan bergizi \n-Rutin olahraga \n-Makanlah daun pepaya untuk penanganan alami \n-Konsumsi telur yang banyak mengandung protein \n-Konsumsi air kelapa");
-        }
-            
-        else
-        if(jcom.getSelectedItem().equals("Usus Buntu")){
+        }      
+            else if(jcom.getSelectedItem().equals("Usus Buntu")){
            Hasil.append("Penyakit usus buntu adalah peradangan atau \npembengkakan apendiks atau usus buntu. Sedangkan usus \nbuntu adalah organ berbentuk kantong kecil \ndan tipis berukuran 5 hingga 10 cm yang terhubung \npada usus besar");
            Hasil1.append("Berikut Penyebabnya : \n-Tinja \n-Kelenjar getah bening yang membengkak di dinding usus. \n Pembengkakan ini biasanya berkembang setelah terjadi \ninfeksi saluran pernapasan atas.");
            Hasil2.append("-Kehilangan nafsu makan \n-Perut kembung dan tak bisa  buang gas \n-Mual dan mutah \n-Konstipasi atau diare \n-Demam");
@@ -270,8 +279,8 @@ public class Frame2 extends javax.swing.JFrame {
            Hasil.append("Influenza, yang lebih dikenal dengan sebutan flu, \nmerupakan penyakit menular yang disebabkan oleh \nvirus RNA dari familia Orthomyxoviridae(virus influenza), \nyang menyerang unggas dan mamalia.");
            Hasil1.append("Virus flu menyebar lewat udara \nketika seseorang terinfeksi batuk, \nbersin atau bicara.");
            Hasil2.append("-Demam dan menggigil \n-Batuk dan hidung tersumbat \n-Nyeri tubuh \n-Mudah kelelahan \n-Iritasi mata \n-Ruam petechiae");
-           Hasil3.append("Disarankan untuk banyak istirahat \nMeminum banyak cairan \nMenghindari penggunaan alkohol dan rokok \nKonsumsi obat seperti parasetamol");}
-         
+           Hasil3.append("Disarankan untuk banyak istirahat \nMeminum banyak cairan \nMenghindari penggunaan alkohol dan rokok \nKonsumsi obat seperti parasetamol");
+        }        
     }//GEN-LAST:event_jcomActionPerformed
 
     private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
@@ -281,6 +290,11 @@ public class Frame2 extends javax.swing.JFrame {
         Hasil3.setText("");
     // TODO add your handling code here:
     }//GEN-LAST:event_resetActionPerformed
+
+    private void reset1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reset1ActionPerformed
+         new Frame1().setVisible(true);
+            dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_reset1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -347,5 +361,6 @@ public class Frame2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JComboBox<String> jcom;
     private javax.swing.JButton reset;
+    private javax.swing.JButton reset1;
     // End of variables declaration//GEN-END:variables
 }

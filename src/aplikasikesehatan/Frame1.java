@@ -31,6 +31,7 @@ public class Frame1 extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,19 +42,19 @@ public class Frame1 extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(0, 153, 153));
         jLabel8.setText("WELCOME TO PHILIP HOSPITAL");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(240, 130, 590, 40);
+        jLabel8.setBounds(230, 110, 590, 40);
 
         jLabel11.setFont(new java.awt.Font("Script MT Bold", 0, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 204, 204));
         jLabel11.setText("The highest national recognition ");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(350, 160, 315, 40);
+        jLabel11.setBounds(340, 140, 315, 40);
 
         jLabel2.setFont(new java.awt.Font("Script MT Bold", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 204, 204));
         jLabel2.setText("for quality patient care and safety");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(330, 190, 370, 35);
+        jLabel2.setBounds(320, 170, 370, 35);
 
         jButton1.setBackground(new java.awt.Color(153, 153, 255));
         jButton1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
@@ -65,7 +66,19 @@ public class Frame1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(390, 240, 240, 30);
+        jButton1.setBounds(380, 210, 240, 30);
+
+        jButton2.setBackground(new java.awt.Color(153, 153, 255));
+        jButton2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 102, 102));
+        jButton2.setText("CHECK IDEAL");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(410, 250, 180, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/asuransi-keluarga-1000x380.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -79,6 +92,11 @@ public class Frame1 extends javax.swing.JFrame {
             new Frame2().setVisible(true);
             dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+         new Frame3().setVisible(true);
+            dispose(); 
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,6 +135,7 @@ public class Frame1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
